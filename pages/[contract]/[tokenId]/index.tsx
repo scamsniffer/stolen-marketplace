@@ -201,6 +201,8 @@ export const getStaticProps: GetStaticProps<{
 }> = async ({ params }) => {
   const contract = params?.contract?.toString()
   const tokenId = params?.tokenId?.toString()
+
+  console.log('contract', contract, 'tokenId', tokenId)
   
   const assetRes = await fetch(
     `${RESERVOIR_API_BASE}/v1/collections/${contract}/${tokenId}.json`
