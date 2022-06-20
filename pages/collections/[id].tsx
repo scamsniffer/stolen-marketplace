@@ -254,17 +254,21 @@ const Home: NextPage<Props> = ({ fallback, id }) => {
 export default Home
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const collectionRes = await fetch(`${RESERVOIR_API_BASE}/v1/all.json`)
-  const collections: any[] = await collectionRes.json()
-  const paths = collections.map(({ contract_address }) => ({
-    params: {
-      id: contract_address,
-    },
-  }))
   return {
-    paths,
+    paths: [],
     fallback: false,
   }
+  // const collectionRes = await fetch(`${RESERVOIR_API_BASE}/v1/all.json`)
+  // const collections: any[] = await collectionRes.json()
+  // const paths = collections.map(({ contract_address }) => ({
+  //   params: {
+  //     id: contract_address,
+  //   },
+  // }))
+  // return {
+  //   paths,
+  //   fallback: false,
+  // }
 }
 
 export const getStaticProps: GetStaticProps<{
