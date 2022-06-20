@@ -17,13 +17,10 @@ const CollectionInfo: FC<Props> = ({ collection, details }) => {
   return (
     <article className="col-span-full rounded-2xl border border-gray-300 bg-white p-6 dark:border-neutral-600 dark:bg-black">
       <div className="reservoir-h5 mb-4 dark:text-white">Collection Info</div>
-      <Link href={`/collections/${collection.data?.collection?.id}`}>
+      <Link href={`/collections/${token?.asset_contract?.address}`}>
         <a className="inline-flex items-center gap-2">
           <img
-            src={optimizeImage(
-              collection?.image_url as string,
-              50
-            )}
+            src={optimizeImage(collection?.image_url as string, 50)}
             alt="collection avatar"
             className="h-9 w-9 rounded-full"
           />
