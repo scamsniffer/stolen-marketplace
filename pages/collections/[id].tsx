@@ -256,7 +256,7 @@ export default Home
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
-    fallback: false,
+    fallback: 'blocking',
   }
   // const collectionRes = await fetch(`${RESERVOIR_API_BASE}/v1/all.json`)
   // const collections: any[] = await collectionRes.json()

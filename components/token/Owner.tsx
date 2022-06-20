@@ -19,7 +19,7 @@ const Owner: FC<Props> = ({ details, bannedOnOpenSea }) => {
     <div className="col-span-full md:col-span-4 lg:col-span-5 lg:col-start-2">
       <article className="col-span-full rounded-2xl border border-gray-300 bg-white p-6 dark:border-neutral-600 dark:bg-black">
         <div className="reservoir-h3 mb-6 flex items-center gap-4 overflow-hidden font-headings dark:text-white">
-          <div>{token?.name || `#${token?.tokenId}`}</div>
+          <div>{token?.name || `#${token?.token_id}`}</div>
           {bannedOnOpenSea && (
             <Tooltip.Provider>
               <Tooltip.Root delayDuration={0}>

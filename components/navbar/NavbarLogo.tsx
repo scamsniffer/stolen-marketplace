@@ -13,7 +13,7 @@ type Props = {
 }
 
 const NavbarLogo: FC<Props> = ({ variant, className }) => {
-  const logo = NAVBAR_LOGO || '/reservoir.svg'
+  const logo = NAVBAR_LOGO || '/logo-cir.png'
   const desktopLogo = DESKTOP_NAVBAR_LOGO || '/logo-light.png'
   const logoAlt = SOURCE_ID ? `${SOURCE_ID} Logo` : 'Scam Sniffer Logo'
   const mobileVariant = variant == 'mobile'
