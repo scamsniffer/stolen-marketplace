@@ -291,7 +291,9 @@ export const getStaticProps: GetStaticProps<{
     props: {
       fallback: {
         collection: data.collection,
-        tokens: data.tokens,
+        tokens: data.tokens.sort(
+          (a: any, b: any) => new Date(b.firstTime).getTime() - new Date(a.firstTime).getTime()
+        ),
       },
       id,
     },
