@@ -57,7 +57,7 @@ const TokensGrid: FC<Props> = ({ tokens, collectionId, collectionImage }) => {
             return (
               <Link
                 key={`${collectionId}${idx}`}
-                href={`/${collectionId}/${token?.tokenId}`}
+                href={`/assets/${collectionId}/${token?.tokenId}`}
               >
                 <a className="group relative mb-6 grid transform-gpu self-start overflow-hidden rounded-[16px] border border-[#D4D4D4] bg-white transition ease-in hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-lg hover:ease-out dark:border-0 dark:bg-neutral-800 dark:ring-1 dark:ring-neutral-600">
                   {token?.source && (
