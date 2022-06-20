@@ -284,7 +284,7 @@ export const getStaticProps: GetStaticProps<{
   const id = params?.id?.toString()
   const collectionRes = await fetch(`${RESERVOIR_API_BASE}/v1/collections/${id}.json`,
     options
-  ) 
+  )
 
   const data = await collectionRes.json() as any;
   return {

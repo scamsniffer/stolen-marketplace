@@ -60,11 +60,11 @@ const Home: NextPage<Props> = ({ fallback }) => {
   const image = metadata.image(META_IMAGE)
   const tagline = metadata.tagline(TAGLINE)
 
-  useEffect(() => {
-    if (REDIRECT_HOMEPAGE && COLLECTION) {
-      router.push(`/collections/${COLLECTION}`)
-    }
-  }, [COLLECTION, REDIRECT_HOMEPAGE])
+  // useEffect(() => {
+  //   if (REDIRECT_HOMEPAGE && COLLECTION) {
+  //     router.push(`/collections/${COLLECTION}`)
+  //   }
+  // }, [COLLECTION, REDIRECT_HOMEPAGE])
 
   // Return error page if the API base url or the environment's
   // chain ID are missing
