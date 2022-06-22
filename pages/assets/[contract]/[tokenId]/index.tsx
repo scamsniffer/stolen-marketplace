@@ -11,6 +11,7 @@ import useAsks from 'hooks/useAsks'
 import Listings from 'components/token/Listings'
 import TokenInfo from 'components/token/TokenInfo'
 import CollectionInfo from 'components/token/CollectionInfo'
+import ScamInfo from 'components/token/ScamInfo'
 import Owner from 'components/token/Owner'
 import PriceData from 'components/token/PriceData'
 import TokenMedia from 'components/token/TokenMedia'
@@ -174,6 +175,7 @@ const Index: NextPage<Props> = ({ collectionId, tokenDetails }) => {
       </div>
       <div className="col-span-full mb-4 space-y-4 px-2 md:col-span-4 md:col-start-5 lg:col-span-5 lg:col-start-7 lg:px-0 2xl:col-span-5 2xl:col-start-7 3xl:col-start-9 4xl:col-start-11">
         <Owner details={details} bannedOnOpenSea={bannedOnOpenSea} />
+        <ScamInfo collection={details.collection} details={details} />
         {/* <PriceData details={details} collection={details.collection} /> */}
         <TokenAttributes token={token?.token} collection={details.collection} />
         {/* <Listings asks={asks} /> */}

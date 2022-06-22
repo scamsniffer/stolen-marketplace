@@ -6,7 +6,8 @@ import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import useSWRInfinite, { SWRInfiniteKeyLoader } from 'swr/infinite'
 
-const DATA_BASE = process.env.NEXT_PUBLIC_DATA_BASE
+const DATA_BASE = process.env.NEXT_PUBLIC_LIST_DATA_BASE || process.env.NEXT_PUBLIC_DATA_BASE
+
 const COLLECTION = process.env.NEXT_PUBLIC_COLLECTION
 const COMMUNITY = process.env.NEXT_PUBLIC_COMMUNITY
 const COLLECTION_SET_ID = process.env.NEXT_PUBLIC_COLLECTION_SET_ID

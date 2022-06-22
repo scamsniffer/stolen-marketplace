@@ -15,7 +15,7 @@ import { useRouter } from 'next/router'
 // Reference: https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser
 // REQUIRED
 const CHAIN_ID = process.env.NEXT_PUBLIC_CHAIN_ID
-const RESERVOIR_API_BASE = process.env.NEXT_PUBLIC_DATA_BASE
+const RESERVOIR_API_BASE = process.env.NEXT_PUBLIC_LIST_DATA_BASE || process.env.NEXT_PUBLIC_DATA_BASE
 
 // OPTIONAL
 const RESERVOIR_API_KEY = process.env.RESERVOIR_API_KEY
