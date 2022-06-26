@@ -19,13 +19,13 @@ const Layout: FC<Props> = ({ children, navbar }) => {
         <Navbar {...navbar} />
         {children}
       </main>
-      <div className="group mt-6 mx-auto flex w-full cursor-pointer items-center justify-center gap-3  bg-neutral-100  py-4 px-4 outline-none  transition dark:bg-neutral-800 ">
+      <div className="group mt-6 mx-auto flex w-full cursor-pointer items-center justify-center gap-3   py-4 px-4 outline-none  transition  ">
         <Link href="https://reservoirprotocol.github.io/">
           <a
             className="reservoir-tiny flex gap-2 dark:text-white"
             target="_blank"
           >
-            Powered by{' '}
+            Forked from{' '}
             <img
               src={
                 !!DARK_MODE
