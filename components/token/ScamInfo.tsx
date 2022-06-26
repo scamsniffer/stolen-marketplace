@@ -43,7 +43,7 @@ const ScamInfo: FC<Props> = ({ collection, details }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={receiver}
-                href={`https://etherscan.io/address/${receiver}`}
+                href={`https://etherscan.io/token/${details.asset_contract.address}?a=${receiver}`}
               >
                 {truncateAddress(receiver)}
                 <FiExternalLink className="h-4 w-4" />
