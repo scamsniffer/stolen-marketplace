@@ -141,7 +141,7 @@ const Home: NextPage<Props> = ({ fallback, id }) => {
   const title = metaTitle ? (
     <title>{metaTitle}</title>
   ) : (
-    <title>{collection.data?.collection?.name}</title>
+    <title>{collection.data?.collection?.name} - Stolen NFTs Explorer</title>
   )
   const description = metaDescription ? (
     <meta name="description" content={metaDescription} />

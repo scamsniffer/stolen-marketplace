@@ -31,7 +31,7 @@ const COLLECTION_SET_ID = process.env.NEXT_PUBLIC_COLLECTION_SET_ID
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
 const metadata = {
-  title: (title: string) => <title>{title}</title>,
+  title: (title: string) => <title>{title} - Stolen NFTs Explorer</title>,
   description: (description: string) => (
     <meta name="description" content={description} />
   ),

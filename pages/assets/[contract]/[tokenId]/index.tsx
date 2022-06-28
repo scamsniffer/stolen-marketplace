@@ -44,7 +44,7 @@ type Props = {
 const metadata = {
   title: (title: string) => (
     <>
-      <title>{title}</title>
+      <title>{title} - Stolen NFTs Explorer</title>
       <meta property="twitter:title" content={title} />
       <meta property="og:title" content={title} />
     </>
