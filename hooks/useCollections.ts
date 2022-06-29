@@ -19,10 +19,11 @@ export default function useCollections(
   const { ref, inView } = useInView()
   const sortBy = router.query['sort']?.toString()
 
-  const pathname =
-    sortBy || sortBy && sortBy != 'all'
-      ? `${DATA_BASE}/v1/summary_${sortBy}.json`
-      : `${DATA_BASE}/v1/all.json`
+  const pathname = !sortBy
+    ? `${DATA_BASE}/v1/summary_7DayVolume.json`
+    : sortBy && sortBy == 'all'
+    ? `${DATA_BASE}/v1/all.json`
+    : `${DATA_BASE}/v1/summary_${sortBy}.json`
 
   const collections = useSWRInfinite<any>(
     (index, previousPageData) => pathname,

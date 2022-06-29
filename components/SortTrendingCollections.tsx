@@ -18,7 +18,7 @@ const options: { [x: string]: Options } = {
 const SortTrendingCollections: FC = () => {
   const router = useRouter()
   const [open, setOpen] = useState(false)
-  const [sortSelection, setSortSelection] = useState<Options>('All')
+  const [sortSelection, setSortSelection] = useState<Options>('Last 7 Days')
   const { collections } = useCollections(router)
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const SortTrendingCollections: FC = () => {
       setSortSelection(options[sort])
       return
     }
-    setSortSelection('All')
+    setSortSelection('Last 7 Days')
   }, [router.query])
 
   return (
