@@ -38,8 +38,16 @@ const Navbar: FC = () => {
 
   const externalLinks: { name: string; url: string }[] = [
     {
+      name: 'Home',
+      url: 'https://scamsniffer.io/',
+    },
+    {
       name: 'Methodology',
       url: 'https://docs.scamsniffer.io/stolen-nfts-explorer/methodology',
+    },
+    {
+      name: 'Browser Extension',
+      url: 'https://chrome.google.com/webstore/detail/scam-sniffer/mnkbccinkbalkmmnmbcicdobcmgggmfc',
     },
   ]
 
