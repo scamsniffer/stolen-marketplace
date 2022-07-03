@@ -106,13 +106,13 @@ const HamburgerMenu: FC<Props> = ({ externalLinks }) => {
               </>
             ) : (
               <div className="mt-12 px-4">
-                <button
+                {/* <button
                   key={wallet.id}
                   onClick={() => setWalletModal(true)}
                   className="btn-primary-fill col-span-2 col-start-3 w-full md:col-span-4 md:col-start-5 lg:col-span-4 lg:col-start-9"
                 >
                   Connect Wallet
-                </button>
+                </button> */}
               </div>
             )}
           </>

@@ -121,7 +121,7 @@ const Navbar: FC = () => {
           {filterComponent && filterComponent}
         </div>
       </div>
-      {/* <HamburgerMenu externalLinks={externalLinks} /> */}
+      <HamburgerMenu externalLinks={externalLinks} />
       <div className="z-10 ml-auto hidden shrink-0 md:flex md:gap-7">
         {/* <ConnectWallet /> */}
         {externalLinks.map(({ name, url }) => (

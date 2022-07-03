@@ -69,7 +69,6 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
     all.totalStolen += item.stolen
     return all;
   }, {
-
     totalValue: 0,
     totalStolen: 0
   })
@@ -112,7 +111,7 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
               .sort((a, b) => {
                 return b.valueInETH - a.valueInETH
               })
-              .slice(0, 10)
+              .slice(0, 5)
               .map((parsed: any, index, arr) => {
                 const {
                   contract,
@@ -139,7 +138,7 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
                     key={`${contract}-${index}`}
                     // ref={index === arr.length - 5 ? ref : null}
                     className={
-                      index === 9
+                      index === 4
                         ? 'group h-[88px]  border-neutral-300 dark:border-neutral-600 dark:text-white'
                         : 'group h-[88px] border-b border-neutral-300 dark:border-neutral-600 dark:text-white'
                     }
@@ -212,7 +211,7 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
               .sort((a, b) => {
                 return b.stolen - a.stolen
               })
-              .slice(0, 10)
+              .slice(0, 5)
               .map((parsed: any, index, arr) => {
                 const {
                   contract,
@@ -239,7 +238,7 @@ const TrendingCollectionTable: FC<Props> = ({ fallback }) => {
                     key={`${contract}-${index}`}
                     // ref={index === arr.length - 5 ? ref : null}
                     className={
-                      index === 9
+                      index === 4
                         ? 'group h-[88px]  border-neutral-300 dark:border-neutral-600 dark:text-white'
                         : 'group h-[88px] border-b border-neutral-300 dark:border-neutral-600 dark:text-white'
                     }
