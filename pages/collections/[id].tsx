@@ -43,7 +43,7 @@ const RESERVOIR_API_KEY = process.env.RESERVOIR_API_KEY
 
 const envBannerImage = process.env.NEXT_PUBLIC_BANNER_IMAGE
 
-const RESERVOIR_API_BASE = process.env.NEXT_PUBLIC_DATA_BASE
+const RESERVOIR_API_BASE = process.env.NEXT_PUBLIC_LIST_DATA_BASE
 const PROXY_API_BASE = process.env.NEXT_PUBLIC_PROXY_API_BASE
 
 const metaTitle = process.env.NEXT_PUBLIC_META_TITLE
