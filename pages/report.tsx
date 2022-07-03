@@ -107,9 +107,10 @@ const Home: NextPage<Props> = ({ fallback }) => {
         </div> */}
         <TrendingCollectionReport fallback={fallback} />
       </div>
-      <div className="mb-12 text-center opacity-70">
-        <img src="/logo-light.png" className={'mx-auto h-6 w-auto'} />
+      <div className="mb-12 text-center opacity-80">
+        <p className="mt-4 text-xs">explorer.scamsniffer.io</p>
         <p className="mt-4 text-xs">{timeDis}</p>
+        <img src="/logo-light.png" className={'mx-auto mt-10 h-5 w-auto'} />
       </div>
     </div>
   )
