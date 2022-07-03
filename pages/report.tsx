@@ -86,19 +86,20 @@ const Home: NextPage<Props> = ({ fallback }) => {
         {description}
         {image}
       </Head>
-      <header className="col-span-full mb-24 mt-24 px-6 md:px-16">
-        <div className="mb-24 flex w-full items-center justify-between">
-          <div>
-            <img src="/logo-light.png" className={'mx-auto h-10 w-auto'} />
-          </div>
-          <SortTrendingCollections />
+      <header className="col-span-full mb-2 mt-24 px-6 md:px-16">
+        <div>
+          <img src="/logo-light.png" className={'mx-auto h-10 w-auto'} />
         </div>
         {/* <p className="mb-12">
           <img src="/logo-light.png" className={'mx-auto h-10 w-auto'} />
         </p> */}
-        <h1 className="reservoir-h1 text-center dark:text-gray-300">
+        <h1 className="reservoir-h1 mt-12 mb-16 text-center dark:text-gray-300 ">
           Stolen NFTs Report
         </h1>
+        <div className="flex w-full items-center justify-between">
+          <div></div>
+          <SortTrendingCollections />
+        </div>
       </header>
       <div className="col-span-full px-6 md:px-16">
         {/* <div className="mb-9 flex w-full items-center justify-between">
